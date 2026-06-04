@@ -3,3 +3,12 @@
 
 #include "Charactors/CharacterImpl/AuraGoblinSlingShot.h"
 
+void AAuraGoblinSlingShot::HighLightAction()
+{
+	Super::HighLightAction();
+}
+
+void AAuraGoblinSlingShot::UnHighLightAction()
+{
+	Super::UnHighLightAction();
+}

@@ -13,5 +13,7 @@ UCLASS()
 class MYAURA_API AAuraGoblinSlingShot : public AAuraEnemy
 {
 	GENERATED_BODY()
-	
+public:
+	virtual void HighLightAction() override;
+	virtual void UnHighLightAction() override;
 };
