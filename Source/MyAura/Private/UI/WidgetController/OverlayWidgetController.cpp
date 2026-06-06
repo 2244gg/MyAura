@@ -3,6 +3,8 @@
 
 #include "UI/WidgetController/OverlayWidgetController.h"
 
+#include "MeshPaintVisualize.h"
+#include "AbilitySystem/AuraAbilitySystemComponent.h"
 #include "AbilitySystem/AuraAttributeSet.h"
 
 void UOverlayWidgetController::BroadcastInitialValues()
@@ -27,6 +29,7 @@ void UOverlayWidgetController::BindCallBacksToDependencies()
 		AuraAttributeSet->GetManaAttribute()).AddUObject(this,&UOverlayWidgetController::ManaChanged);
 	AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(
 		AuraAttributeSet->GetMaxManaAttribute()).AddUObject(this,&UOverlayWidgetController::MaxManaChanged);
+	Cast<UAuraAbilitySystemComponent>(AbilitySystemComponent)->EffectAssetTags.AddUObject(this,&UOverlayWidgetController::EffectAssetTags);
 }
 
 void UOverlayWidgetController::HealthChanged(const FOnAttributeChangeData& Data)
@@ -47,4 +50,13 @@ void UOverlayWidgetController::ManaChanged(const FOnAttributeChangeData& Data)
 void UOverlayWidgetController::MaxManaChanged(const FOnAttributeChangeData& Data)
 {
 	OnMaxManaChanged.Broadcast(Data.NewValue);
+}
+void UOverlayWidgetController::EffectAssetTags(const FGameplayTagContainer& Container)
+{
+		for (const FGameplayTag& Tag : Container)
+		{
+			FUIWidgetRow* Row=GetDataTableRowByTag<FUIWidgetRow>(MessageWidgetDataTable,Tag);
+			GEngine->AddOnScreenDebugMessage(-1,8.f,FColor::Blue,*Tag.ToString());
+			MessageWidgetRowDelegate.Broadcast(*Row);
+		}
 }

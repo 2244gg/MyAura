@@ -39,7 +39,7 @@ void AAuraCharacter::InitAbilitySystemComponent()
 	AbilitySystemComponent=AuraPlayerState->GetAbilitySystemComponent();
 	AttributeSet=AuraPlayerState->GetAttributeSet();
 	AbilitySystemComponent->InitAbilityActorInfo(AuraPlayerState,this);
-	
+	Cast<UAuraAbilitySystemComponent>(AbilitySystemComponent)->AbilityActorInfoSet();
 	if (AAuraPlayerController* AuraPlayerController=Cast<AAuraPlayerController>( GetController()))
 	{
 		if (AAuraHUD* HUD= Cast<AAuraHUD>(AuraPlayerController->GetHUD()))

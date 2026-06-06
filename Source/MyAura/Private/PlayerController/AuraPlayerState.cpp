@@ -8,6 +8,7 @@
 
 AAuraPlayerState::AAuraPlayerState()
 {
+	
 	NetUpdateFrequency=100.f;
 	
 	AbilitySystemComponent=CreateDefaultSubobject<UAuraAbilitySystemComponent>("AbilitySystemComponent");

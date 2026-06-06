@@ -19,4 +19,5 @@ public:
 	virtual void BeginPlay() override;
 	virtual void HighLightAction() override;
 	virtual void UnHighLightAction() override;
+	virtual void InitAbilityActorInfo() override;
 };
