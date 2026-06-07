@@ -22,4 +22,8 @@ public:
 	TObjectPtr<UAbilitySystemComponent> AbilitySystemComponent;
 	UPROPERTY()
 	TObjectPtr<UAttributeSet> AttributeSet;
+	
+	int32 GetLevel();
+private:
+	int32 level=1;
 };

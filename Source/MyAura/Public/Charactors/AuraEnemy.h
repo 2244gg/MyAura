@@ -20,4 +20,7 @@ public:
 	virtual void HighLightAction() override;
 	virtual void UnHighLightAction() override;
 	virtual void InitAbilityActorInfo() override;
+	virtual int32 GetLevel() override;
+protected:
+	int32 level=1;
 };

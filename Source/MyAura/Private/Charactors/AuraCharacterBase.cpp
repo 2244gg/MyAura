@@ -3,6 +3,7 @@
 
 #include "Charactors/AuraCharacterBase.h"
 
+#include "AbilitySystemComponent.h"
 #include "DataWrappers/ChaosVDJointDataWrappers.h"
 
 AAuraCharacterBase::AAuraCharacterBase()
@@ -29,8 +30,33 @@ void AAuraCharacterBase::BeginPlay()
 	
 }
 
+
+void AAuraCharacterBase::InitializePrimaryAttributes()
+{
+	InitializeDefaultAttributes(DefaultPrimaryAttributes,1.f);
+}
+
+void AAuraCharacterBase::InitializeSecondaryAttributes()
+{
+	InitializeDefaultAttributes(DefaultSecondaryAttributes,1.f);
+}
+
+void AAuraCharacterBase::InitializeVitalAttributes()
+{
+	InitializeDefaultAttributes(DefaultVitalAttributes,1.f);
+}
+
 void AAuraCharacterBase::InitAbilityActorInfo()
 {
+}
+
+void AAuraCharacterBase::InitializeDefaultAttributes(TSubclassOf<UGameplayEffect> DefaultAttributes, float level)
+{
+	check(GetAbilitySystemComponent());
+	FGameplayEffectContextHandle ContextHandle=GetAbilitySystemComponent()->MakeEffectContext();
+	ContextHandle.AddSourceObject(this);
+	FGameplayEffectSpecHandle SpecHandle = GetAbilitySystemComponent()->MakeOutgoingSpec(DefaultAttributes,level,ContextHandle);
+	GetAbilitySystemComponent()->ApplyGameplayEffectSpecToTarget(*SpecHandle.Data.Get(),GetAbilitySystemComponent());
 }
 
 

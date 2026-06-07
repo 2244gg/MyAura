@@ -27,3 +27,8 @@ UAttributeSet* AAuraPlayerState::GetAttributeSet() const
 {
 	return AttributeSet;
 }
+
+int32 AAuraPlayerState::GetLevel()
+{
+	return level;
+}

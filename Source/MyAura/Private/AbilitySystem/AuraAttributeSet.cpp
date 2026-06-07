@@ -13,9 +13,7 @@
 UAuraAttributeSet::UAuraAttributeSet()
 {
 	InitHealth(50.f);
-	InitMaxHealth(100.f);
 	InitMana(25.f);
-	InitMaxMana(100.f);
 }
 
 void UAuraAttributeSet::PreAttributeBaseChange(const FGameplayAttribute& Attribute, float& NewValue) const
@@ -53,6 +51,19 @@ void UAuraAttributeSet::GetLifetimeReplicatedProps(TArray<class FLifetimePropert
 	DOREPLIFETIME_CONDITION_NOTIFY(UAuraAttributeSet,MaxHealth,COND_None,REPNOTIFY_Always);
 	DOREPLIFETIME_CONDITION_NOTIFY(UAuraAttributeSet,Mana,COND_None,REPNOTIFY_Always);
 	DOREPLIFETIME_CONDITION_NOTIFY(UAuraAttributeSet,MaxMana,COND_None,REPNOTIFY_Always);
+	DOREPLIFETIME_CONDITION_NOTIFY(UAuraAttributeSet,Strength,COND_None,REPNOTIFY_Always);
+	DOREPLIFETIME_CONDITION_NOTIFY(UAuraAttributeSet,Intelligence,COND_None,REPNOTIFY_Always);
+	DOREPLIFETIME_CONDITION_NOTIFY(UAuraAttributeSet,Resilience,COND_None,REPNOTIFY_Always);
+	DOREPLIFETIME_CONDITION_NOTIFY(UAuraAttributeSet,Vigor,COND_None,REPNOTIFY_Always);
+	
+	DOREPLIFETIME_CONDITION_NOTIFY(UAuraAttributeSet,Armor,COND_None,REPNOTIFY_Always);
+	DOREPLIFETIME_CONDITION_NOTIFY(UAuraAttributeSet,Armor_Penetration,COND_None,REPNOTIFY_Always);
+	DOREPLIFETIME_CONDITION_NOTIFY(UAuraAttributeSet,Block_Chance,COND_None,REPNOTIFY_Always);
+	DOREPLIFETIME_CONDITION_NOTIFY(UAuraAttributeSet,Critical_Hit_Chance,COND_None,REPNOTIFY_Always);
+	DOREPLIFETIME_CONDITION_NOTIFY(UAuraAttributeSet,Critical_Hit_Damage,COND_None,REPNOTIFY_Always);
+	DOREPLIFETIME_CONDITION_NOTIFY(UAuraAttributeSet,Critical_Hit_Resistance,COND_None,REPNOTIFY_Always);
+	DOREPLIFETIME_CONDITION_NOTIFY(UAuraAttributeSet,Health_Regeneration,COND_None,REPNOTIFY_Always);
+	DOREPLIFETIME_CONDITION_NOTIFY(UAuraAttributeSet,Mana_Regeneration,COND_None,REPNOTIFY_Always);
 }
 
 void UAuraAttributeSet::OnRep_Health(const FGameplayAttributeData& Previous) const
@@ -73,6 +84,66 @@ void UAuraAttributeSet::OnRep_Mana(const FGameplayAttributeData& Previous) const
 void UAuraAttributeSet::OnRep_MaxMana(const FGameplayAttributeData& Previous) const
 {
 	GAMEPLAYATTRIBUTE_REPNOTIFY(UAuraAttributeSet,MaxMana,Previous);
+}
+
+void UAuraAttributeSet::OnRep_Strength(const FGameplayAttributeData& Previous) const
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(UAuraAttributeSet,Strength,Previous);
+}
+
+void UAuraAttributeSet::OnRep_Intelligence(const FGameplayAttributeData& Previous) const
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(UAuraAttributeSet,Intelligence,Previous);
+}
+
+void UAuraAttributeSet::OnRep_Resilience(const FGameplayAttributeData& Previous) const
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(UAuraAttributeSet,Resilience,Previous);
+}
+
+void UAuraAttributeSet::OnRep_Vigor(const FGameplayAttributeData& Previous) const
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(UAuraAttributeSet,Vigor,Previous);
+}
+
+void UAuraAttributeSet::OnRep_Armor(const FGameplayAttributeData& Previous) const
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(UAuraAttributeSet,Armor,Previous);
+}
+
+void UAuraAttributeSet::OnRep_Armor_Penetration(const FGameplayAttributeData& Previous) const
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(UAuraAttributeSet,Armor_Penetration,Previous);
+}
+
+void UAuraAttributeSet::OnRep_Block_Chance(const FGameplayAttributeData& Previous) const
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(UAuraAttributeSet,Block_Chance,Previous);
+}
+
+void UAuraAttributeSet::OnRep_Critical_Hit_Chance(const FGameplayAttributeData& Previous) const
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(UAuraAttributeSet,Critical_Hit_Chance,Previous);
+}
+
+void UAuraAttributeSet::OnRep_Critical_Hit_Damage(const FGameplayAttributeData& Previous) const
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(UAuraAttributeSet,Critical_Hit_Damage,Previous);
+}
+
+void UAuraAttributeSet::OnRep_Critical_Hit_Resistance(const FGameplayAttributeData& Previous) const
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(UAuraAttributeSet,Critical_Hit_Resistance,Previous);
+}
+
+void UAuraAttributeSet::OnRep_Health_Regeneration(const FGameplayAttributeData& Previous) const
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(UAuraAttributeSet,Health_Regeneration,Previous);
+}
+
+void UAuraAttributeSet::OnRep_Mana_Regeneration(const FGameplayAttributeData& Previous) const
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(UAuraAttributeSet,Mana_Regeneration,Previous);
 }
 
 void UAuraAttributeSet::SetEffectProperties(const struct FGameplayEffectModCallbackData& Data,FEffectProperties& Props) const
