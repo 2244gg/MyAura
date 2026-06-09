@@ -15,17 +15,7 @@
   <component name="ChangeListManager">
     <list default="true" id="03f4b1c0-a4ea-4f24-a8e2-19fe032d05f1" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MyAura.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyAura.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Characters/Aura/BP_AuraCharactor.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Characters/Aura/BP_AuraCharactor.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyAura/Private/AbilitySystem/AuraAttributeSet.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyAura/Private/AbilitySystem/AuraAttributeSet.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyAura/Private/Charactors/AuraCharacterBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyAura/Private/Charactors/AuraCharacterBase.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyAura/Private/Charactors/AuraEnemy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyAura/Private/Charactors/AuraEnemy.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyAura/Private/Charactors/CharacterImpl/AuraCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyAura/Private/Charactors/CharacterImpl/AuraCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyAura/Private/PlayerController/AuraPlayerState.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyAura/Private/PlayerController/AuraPlayerState.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyAura/Public/AbilitySystem/AuraAttributeSet.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyAura/Public/AbilitySystem/AuraAttributeSet.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyAura/Public/Charactors/AuraCharacterBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyAura/Public/Charactors/AuraCharacterBase.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyAura/Public/Charactors/AuraEnemy.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyAura/Public/Charactors/AuraEnemy.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyAura/Public/Charactors/CharacterImpl/AuraCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyAura/Public/Charactors/CharacterImpl/AuraCharacter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyAura/Public/PlayerController/AuraPlayerState.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyAura/Public/PlayerController/AuraPlayerState.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BluePrints/UI/Overlay/BP_Overlay.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/UI/Overlay/BP_Overlay.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +29,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="cidr-memory-view://36" root0="FORCE_HIGHLIGHTING" />
+    <setting file="cidr-memory-view://39" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/Program Files/Epic Games/UE_5.7/Engine/Source/Runtime/Core/Public/Misc/MTAccessDetector.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/Program Files/Epic Games/UE_5.7/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectHandle.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/MyAura/Public/AbilitySystem/MMC/MMC_MaxHealth.h" root0="FORCE_HIGHLIGHTING" />
@@ -155,7 +145,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1780757618027</updated>
-      <workItem from="1780757624784" duration="14103000" />
+      <workItem from="1780757624784" duration="24553000" />
     </task>
     <servers />
   </component>
