@@ -41,11 +41,15 @@ struct FEffectProperties
 	AController* TargetController=nullptr;
 };
 
+template<class T>
+using TAttributeFuncPtr = TBaseStaticDelegateInstance<T,FDefaultDelegateUserPolicy>::FFuncPtr;
+
 UCLASS()
 class MYAURA_API UAuraAttributeSet : public UAttributeSet
 {
 	GENERATED_BODY()
 	public:
+	TMap<FGameplayTag,TAttributeFuncPtr<FGameplayAttribute()>> TagsToAttributes;
 	UAuraAttributeSet();
 	virtual void PreAttributeBaseChange(const FGameplayAttribute& Attribute, float& NewValue) const override;
 	virtual void PreAttributeChange(const FGameplayAttribute& Attribute, float& NewValue) override;
