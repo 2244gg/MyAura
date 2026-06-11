@@ -6,6 +6,9 @@
 #include "GameFramework/PlayerController.h"
 #include "AuraPlayerController.generated.h"
 
+class UAuraAbilitySystemComponent;
+struct FGameplayTag;
+class UAuraInputConfig;
 class IIHighLightInterface;
 struct FInputActionValue;
 class UInputMappingContext;
@@ -31,7 +34,20 @@ private:
 	
 	IIHighLightInterface* LastFrameCursorHitted;
 	IIHighLightInterface* ThisFrameCursorHitted;
+	
+	UPROPERTY(EditDefaultsOnly,Category="Input")
+	TObjectPtr<UAuraInputConfig> InputConfig;
+	
+	UPROPERTY()
+	TObjectPtr<UAuraAbilitySystemComponent> AuraAbilitySystemComponent;
+	
+	UAuraAbilitySystemComponent* GetASC();
+	
 	void Move(const FInputActionValue& Value);
 	
 	void CursorTrace();
+	
+	void AbilityInputTagPressed(FGameplayTag InputTag);
+	void AbilityInputTagHeld(FGameplayTag InputTag);
+	void AbilityInputTagReleased(FGameplayTag InputTag);
 };

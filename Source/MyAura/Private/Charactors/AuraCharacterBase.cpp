@@ -4,6 +4,7 @@
 #include "Charactors/AuraCharacterBase.h"
 
 #include "AbilitySystemComponent.h"
+#include "AbilitySystem/AuraAbilitySystemComponent.h"
 #include "DataWrappers/ChaosVDJointDataWrappers.h"
 
 AAuraCharacterBase::AAuraCharacterBase()
@@ -48,6 +49,14 @@ void AAuraCharacterBase::InitializeVitalAttributes()
 
 void AAuraCharacterBase::InitAbilityActorInfo()
 {
+}
+
+void AAuraCharacterBase::AddAbilities()
+{
+	UAuraAbilitySystemComponent* AuraASC=CastChecked<UAuraAbilitySystemComponent>(AbilitySystemComponent);
+	if (!HasAuthority()) return;
+	AuraASC->AddCharacterAbilities(StartupAbilities);
+	
 }
 
 void AAuraCharacterBase::InitializeDefaultAttributes(TSubclassOf<UGameplayEffect> DefaultAttributes, float level)
