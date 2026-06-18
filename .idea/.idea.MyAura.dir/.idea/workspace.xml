@@ -15,20 +15,6 @@
   <component name="ChangeListManager">
     <list default="true" id="03f4b1c0-a4ea-4f24-a8e2-19fe032d05f1" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MyAura.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyAura.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultInput.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultInput.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Characters/Aura/BP_AuraCharactor.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Characters/Aura/BP_AuraCharactor.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Input/IMC_AuraContext.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Input/IMC_AuraContext.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Player/BP_AuraPlayerController.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Player/BP_AuraPlayerController.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyAura.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/MyAura.uproject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyAura/Private/AbilitySystem/AuraAbilitySystemComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyAura/Private/AbilitySystem/AuraAbilitySystemComponent.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyAura/Private/AuraGameplayTags.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyAura/Private/AuraGameplayTags.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyAura/Private/Charactors/AuraCharacterBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyAura/Private/Charactors/AuraCharacterBase.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyAura/Private/Charactors/CharacterImpl/AuraCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyAura/Private/Charactors/CharacterImpl/AuraCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyAura/Private/PlayerController/AuraPlayerController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyAura/Private/PlayerController/AuraPlayerController.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyAura/Public/AbilitySystem/AuraAbilitySystemComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyAura/Public/AbilitySystem/AuraAbilitySystemComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyAura/Public/AuraGameplayTags.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyAura/Public/AuraGameplayTags.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyAura/Public/Charactors/AuraCharacterBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyAura/Public/Charactors/AuraCharacterBase.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MyAura/Public/PlayerController/AuraPlayerController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MyAura/Public/PlayerController/AuraPlayerController.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +28,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="cidr-memory-view://61" root0="FORCE_HIGHLIGHTING" />
+    <setting file="cidr-memory-view://62" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/Program Files/Epic Games/UE_5.7/Engine/Source/Runtime/AssetRegistry/Public/AssetRegistry/AssetRegistryModule.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/Program Files/Epic Games/UE_5.7/Engine/Source/Runtime/Core/Private/Logging/StructuredLog.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/Program Files/Epic Games/UE_5.7/Engine/Source/Runtime/Core/Public/Misc/MTAccessDetector.h" root0="FORCE_HIGHLIGHTING" />
@@ -170,7 +156,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1780757618027</updated>
-      <workItem from="1780757624784" duration="65651000" />
+      <workItem from="1780757624784" duration="66960000" />
     </task>
     <servers />
   </component>
